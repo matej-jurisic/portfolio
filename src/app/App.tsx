@@ -1,7 +1,11 @@
 import { useEffect } from "react";
-import { LanguageProvider } from "../context/ApplicationContext";
+import { Route, Routes } from "react-router-dom";
+import Navigation from "../components/Navigation";
 import Frontpage from "../pages/Frontpage";
+import ProjectDetails from "../pages/ProjectDetails";
+import ProjectList from "../pages/ProjectList";
 import "./App.css";
+import "./Colors.css";
 
 function App() {
     useEffect(() => {
@@ -15,9 +19,15 @@ function App() {
 
     return (
         <>
-            <LanguageProvider>
-                <Frontpage />
-            </LanguageProvider>
+            <Navigation />
+            <Routes>
+                <Route path="/" element={<Frontpage />} />
+                <Route path="/projects" element={<ProjectList />} />
+                <Route
+                    path="/projects/:projectName"
+                    element={<ProjectDetails />}
+                />
+            </Routes>
         </>
     );
 }

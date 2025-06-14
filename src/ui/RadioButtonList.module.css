@@ -17,6 +17,6 @@
 }
 
 .active {
-    background-color: var(--primary-800);
+    background-color: var(--primary-700);
     color: var(--background-50);
 }
