@@ -7,6 +7,8 @@
     /* Sizing & Spacing */
     padding: 12px 26px;
     font-size: 16px;
+    height: 46px;
+    width: fit-content;
 
     /* Effects */
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
@@ -15,17 +17,23 @@
 
 .primary {
     /* Primary button styles */
-    background-color: var(--primary-800);
-    border: 1px solid var(--background-50);
+    background-color: var(--primary-900);
+    border: 1px solid var(--primary-900);
     color: var(--background-50);
-    width: fit-content;
 }
 .secondary {
     /* Secondary button styles */
     background-color: transparent;
-    border: 1px solid var(--primary-800);
+    border: 1px solid var(--primary-900);
     color: var(--text-950);
-    width: fit-content;
+}
+.glass {
+    /* Glass button styles */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: var(--text-950);
+    border: 1px solid var(--primary-900);
 }
 
 .square {
@@ -36,11 +44,8 @@
     /* Rounded button styles */
     border-radius: 8px;
 }
-
 .circle {
     /* Circle button styles */
     border-radius: 50%;
     padding: 0;
-    width: 44px;
-    height: 44px;
 }

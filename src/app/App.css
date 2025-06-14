@@ -1,16 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 body,
-html {
+html,
+#root {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
     background-color: var(--background-50);
     color: var(--text-950);
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+#application {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: calc(100% - 550px);
+    height: 100%;
+    font-size: 24px;
+}
+
+@media (max-width: 1100px) {
+    #application {
+        padding-top: 69px;
+        width: calc(100% - 50px);
+    }
 }
 
 div {
     box-sizing: border-box;
+}
+
+code {
+    overflow: auto;
+    display: block;
+    max-width: 100%;
+}
+
+pre:has(code) {
+    max-width: 100%;
 }

@@ -1,7 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import Navigation from "../components/Navigation";
+import Controls from "../components/c_controls/Controls";
+import Navigation from "../components/c_navigation/Navigation";
 import Frontpage from "../pages/Frontpage";
+import PostDetails from "../pages/PostDetails";
+import PostList from "../pages/PostList";
 import ProjectDetails from "../pages/ProjectDetails";
 import ProjectList from "../pages/ProjectList";
 import "./App.css";
@@ -17,17 +20,33 @@ function App() {
         }
     });
 
+    const [width, setWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <>
-            <Navigation />
-            <Routes>
-                <Route path="/" element={<Frontpage />} />
-                <Route path="/projects" element={<ProjectList />} />
-                <Route
-                    path="/projects/:projectName"
-                    element={<ProjectDetails />}
-                />
-            </Routes>
+            {<Navigation />}
+            <div id="application">
+                <Routes>
+                    <Route path="/" element={<Frontpage />} />
+                    <Route path="/projects" element={<ProjectList />} />
+                    <Route
+                        path="/projects/:projectName"
+                        element={<ProjectDetails />}
+                    />
+                    <Route path="/blog" element={<PostList />} />
+                    <Route path="/blog/:postName" element={<PostDetails />} />
+                </Routes>
+            </div>
+            {<Controls />}
         </>
     );
 }

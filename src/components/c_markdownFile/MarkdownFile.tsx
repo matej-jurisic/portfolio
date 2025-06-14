@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
-import { useLanguage } from "../context/ApplicationContext";
+import { useLanguage } from "../../context/ApplicationContext";
+import styles from "./MarkdownFile.module.css";
 
 interface MarkdownFileProps {
     filePath: string;
@@ -23,13 +24,14 @@ export default function MarkdownFile(props: MarkdownFileProps) {
                         !response.ok ||
                         (contentType && contentType.includes("text/html"))
                     ) {
-                        throw new Error(t("projectNotFound"));
+                        throw new Error(t("markdownNotFound"));
                     }
                     const text = await response.text();
                     setMarkdownContent(text);
                 });
             } catch (err: any) {
                 setError(err.message);
+                setMarkdownContent("");
             }
         };
 
@@ -37,9 +39,9 @@ export default function MarkdownFile(props: MarkdownFileProps) {
     }, [t, props.filePath]);
 
     return (
-        <>
+        <div className={styles.markdownFile}>
             {error && <p className="error">{error}</p>}
             {markdownContent && <Markdown>{markdownContent}</Markdown>}
-        </>
+        </div>
     );
 }

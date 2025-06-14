@@ -1,27 +1,15 @@
-import ProjectListItem from "../components/ProjectListItem";
-import Stack from "../ui/Stack";
+import ProjectListItem from "../components/c_projectListItem/ProjectListItem";
+import Stack from "../ui/ui_stack/Stack";
 
 const projects = [
     {
         name: "lvgl_f32c",
     },
-    {
-        name: "weather-app",
-    },
-    {
-        name: "face-recognition-attendance",
-    },
-    {
-        name: "iot-temperature-logger",
-    },
-    {
-        name: "todo-cli",
-    },
 ];
 
 export default function ProjectList() {
     return (
-        <Stack>
+        <Stack height="100%" justifyContent="center">
             {projects.map((p) => (
                 <ProjectListItem projectName={p.name} />
             ))}

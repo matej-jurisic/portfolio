@@ -2,13 +2,13 @@ import { useParams } from "react-router-dom";
 import MarkdownFile from "../components/c_markdownFile/MarkdownFile";
 import { useLanguage } from "../context/ApplicationContext";
 
-export default function ProjectDetails() {
-    const { projectName } = useParams();
+export default function PostDetails() {
+    const { postName } = useParams();
     const { language } = useLanguage();
 
     return (
         <MarkdownFile
-            filePath={`/content/projects/${projectName}/${projectName}.${language}.md`}
+            filePath={`/content/posts/${postName}/${postName}.${language}.md`}
         />
     );
 }

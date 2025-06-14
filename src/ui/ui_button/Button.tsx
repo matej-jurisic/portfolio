@@ -1,10 +1,13 @@
 import styles from "./Button.module.css";
 
+export type ButtonVariant = "primary" | "secondary" | "glass";
+export type ButtonShape = "square" | "rounded" | "circle";
+
 interface ButtonProps {
     onClick?: () => void;
     children?: React.ReactNode;
-    variant?: "primary" | "secondary";
-    shape?: "square" | "rounded" | "circle";
+    variant?: ButtonVariant;
+    shape?: ButtonShape;
 }
 
 export default function Button(props: ButtonProps) {

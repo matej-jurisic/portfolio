@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import Button from "../ui/Button";
+import Button, { type ButtonVariant } from "../../ui/ui_button/Button";
 
 const themeStorageKey = "theme";
 
@@ -9,7 +9,11 @@ const Theme = {
     DARK: "dark-theme",
 } as const;
 
-export default function ThemeButton() {
+interface ThemeButtonProps {
+    buttonVariant?: ButtonVariant;
+}
+
+export default function ThemeButton(props: ThemeButtonProps) {
     const [theme, setTheme] = useState(
         localStorage.getItem(themeStorageKey) || Theme.LIGHT
     );
@@ -22,8 +26,16 @@ export default function ThemeButton() {
     };
 
     return (
-        <Button onClick={toggleTheme} shape="circle" variant="secondary">
-            {theme === Theme.LIGHT ? <FaMoon /> : <FaSun />}
+        <Button
+            onClick={toggleTheme}
+            shape="square"
+            variant={props.buttonVariant ?? "secondary"}
+        >
+            {theme === Theme.LIGHT ? (
+                <FaMoon style={{ color: "var(--text-950)" }} />
+            ) : (
+                <FaSun style={{ color: "var(--text-950)" }} />
+            )}
         </Button>
     );
 }

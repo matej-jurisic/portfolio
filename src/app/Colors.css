@@ -58,6 +58,8 @@
     --accent-800: #443422;
     --accent-900: #221a11;
     --accent-950: #110d09;
+
+    --transparent: rgba(255, 255, 255, 0.5);
 }
 
 .dark-theme {
@@ -120,4 +122,6 @@
     --accent-800: #ddcdbb;
     --accent-900: #eee6dd;
     --accent-950: #f6f3ee;
+
+    --transparent: rgba(0, 0, 0, 0.5);
 }
