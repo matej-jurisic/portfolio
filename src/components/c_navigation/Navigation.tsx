@@ -26,13 +26,17 @@ function useOutsideAlert(
 export default function Navigation() {
     const { t } = useLanguage();
     const [linkListVisible, setLinkListVisible] = useState(false);
+    const [width, setWidth] = useState<number>();
     const navRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         setLinkListVisible(window.innerWidth > 1100);
+        setWidth(window.innerWidth);
     }, [window.innerWidth]);
 
-    useOutsideAlert(navRef, () => setLinkListVisible(false));
+    useOutsideAlert(navRef, () => {
+        if (width && width <= 1100) setLinkListVisible(false);
+    });
 
     const pages = [
         {
@@ -71,7 +75,6 @@ export default function Navigation() {
                                         ? `${styles.navigationLink} ${styles.activeLink}`
                                         : styles.navigationLink
                                 }
-                                onClick={() => setLinkListVisible(false)}
                             >
                                 {p.name}
                             </NavLink>
