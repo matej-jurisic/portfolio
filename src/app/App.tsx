@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Controls from "../components/c_controls/Controls";
 import Navigation from "../components/c_navigation/Navigation";
@@ -19,17 +19,6 @@ function App() {
             document.documentElement.className = "light-theme";
         }
     });
-
-    const [width, setWidth] = useState(window.innerWidth);
-    useEffect(() => {
-        const handleResize = () => {
-            setWidth(window.innerWidth);
-        };
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
 
     return (
         <>
