@@ -8,7 +8,7 @@ export default function PostDetails() {
 
     return (
         <MarkdownFile
-            filePath={`/content/posts/${postName}/${postName}.${language}.md`}
+            filePath={`portfolio/content/posts/${postName}/${postName}.${language}.md`}
         />
     );
 }
