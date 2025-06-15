@@ -25,14 +25,14 @@ function App() {
             {<Navigation />}
             <div id="application">
                 <Routes>
-                    <Route path="" element={<Frontpage />} />
-                    <Route path="projects" element={<ProjectList />} />
+                    <Route path="/" element={<Frontpage />} />
+                    <Route path="/projects" element={<ProjectList />} />
                     <Route
-                        path="projects/:projectName"
+                        path="/projects/:projectName"
                         element={<ProjectDetails />}
                     />
-                    <Route path="blog" element={<PostList />} />
-                    <Route path="blog/:postName" element={<PostDetails />} />
+                    <Route path="/blog" element={<PostList />} />
+                    <Route path="/blog/:postName" element={<PostDetails />} />
                 </Routes>
             </div>
             {<Controls />}

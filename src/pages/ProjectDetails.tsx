@@ -8,7 +8,7 @@ export default function ProjectDetails() {
 
     return (
         <MarkdownFile
-            filePath={`portfolio/content/projects/${projectName}/${projectName}.${language}.md`}
+            filePath={`/portfolio/content/projects/${projectName}/${projectName}.${language}.md`}
         />
     );
 }
