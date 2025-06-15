@@ -6,7 +6,7 @@
     font-size: 30px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .navigationLinkList {
@@ -41,7 +41,6 @@
         padding: 20px;
         border: 1px solid var(--primary-900);
         background: var(--transparent);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
         color: var(--text-950);

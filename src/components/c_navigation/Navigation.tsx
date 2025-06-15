@@ -57,7 +57,7 @@ export default function Navigation() {
         <div className={styles.navigation} ref={navRef}>
             <div className={styles.navigationHamburger}>
                 <Button
-                    variant="glass"
+                    variant={linkListVisible ? "primary" : "glass"}
                     onClick={() => setLinkListVisible((prev) => !prev)}
                 >
                     <GiHamburgerMenu />

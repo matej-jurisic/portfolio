@@ -38,6 +38,7 @@ body {
     #application {
         padding-top: 69px;
         width: calc(100% - 50px);
+        font-size: 18px;
     }
 }
 
@@ -46,11 +47,10 @@ div {
 }
 
 code {
-    overflow: auto;
-    display: block;
     max-width: 100%;
 }
 
 pre:has(code) {
+    overflow: auto;
     max-width: 100%;
 }
