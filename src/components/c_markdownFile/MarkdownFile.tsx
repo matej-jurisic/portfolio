@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
 import { useLanguage } from "../../context/ApplicationContext";
-import styles from "./MarkdownFile.module.css";
-
 interface MarkdownFileProps {
     filePath: string;
 }
@@ -39,7 +37,7 @@ export default function MarkdownFile(props: MarkdownFileProps) {
     }, [t, props.filePath]);
 
     return (
-        <div className={styles.markdownFile}>
+        <div className="markdownFile">
             {error && <p className="error">{error}</p>}
             {markdownContent && <Markdown>{markdownContent}</Markdown>}
         </div>

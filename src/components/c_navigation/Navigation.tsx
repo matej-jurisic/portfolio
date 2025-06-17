@@ -44,6 +44,10 @@ export default function Navigation() {
             link: "/",
         },
         {
+            name: t("experience"),
+            link: "/experience",
+        },
+        {
             name: t("projects"),
             link: "/projects",
         },
@@ -66,7 +70,7 @@ export default function Navigation() {
             {linkListVisible && (
                 <div className={styles.navigationLinkList}>
                     {pages.map((p) => (
-                        <span className={styles.navigationLink}>
+                        <span key={p.name} className={styles.navigationLink}>
                             <NavLink
                                 key={p.link}
                                 to={p.link}

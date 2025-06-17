@@ -10,7 +10,7 @@ export default function Controls() {
 
     return (
         <div className={styles.controls}>
-            <Stack direction="row" gap="30px">
+            <Stack direction="row" gap="10px">
                 <ThemeButton buttonVariant="glass" />
                 <RadioButtonList
                     options={["en", "hr"]}
