@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Controls from "../components/c_controls/Controls";
 import Navigation from "../components/c_navigation/Navigation";
 import Experience from "../pages/Experience";
@@ -35,6 +35,7 @@ function App() {
                     />
                     <Route path="/blog" element={<PostList />} />
                     <Route path="/blog/:postName" element={<PostDetails />} />
+                    <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
             </div>
             {<Controls />}
