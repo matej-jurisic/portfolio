@@ -124,7 +124,7 @@ Zato su proxyji temeljeni na nasljeđivanju korisni: mogu presresti ne samo poč
 
 ---
 
-Autor: _Matej Jurišić_
+Autor: _Matej Jurišić_  
 Email: [mjurisic812@gmail.com](mailto:mjurisic812@gmail.com)
 
 Datum: 26. 06. 2025.
