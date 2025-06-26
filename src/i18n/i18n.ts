@@ -17,6 +17,7 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
         adnetStart: "Started working at Adnet",
         adnetDesc: "Full stack developer",
         adnetRailways: "Development of a Railway Traffic Control System",
+        fibonacciCaching: "adding caching to a recursive fibonacci function",
     },
     hr: {
         headerText: "Matej Jurišić",
@@ -35,5 +36,6 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
         adnetStart: "Započeo rad u Adnetu",
         adnetDesc: "Full stack developer",
         adnetRailways: "Razvoj sustava za regulaciju željezničkog prometa",
+        fibonacciCaching: "dodavanje cachea rekurzivnoj fibonacci funkciji",
     },
 };

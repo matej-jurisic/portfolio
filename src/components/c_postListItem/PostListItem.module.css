@@ -1,4 +1,12 @@
 .postListItem {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
     color: var(--text-950);
+}
+
+.postItemDate {
+    color: var(--text-500);
+    font-size: 15px;
 }

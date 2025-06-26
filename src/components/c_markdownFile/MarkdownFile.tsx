@@ -37,6 +37,7 @@ export default function MarkdownFile(props: MarkdownFileProps) {
                         !response.ok ||
                         (contentType && contentType.includes("text/html"))
                     ) {
+                        console.error(props.filePath + " not found!");
                         throw new Error(t("markdownNotFound"));
                     }
                     const markdownText = await response.text();

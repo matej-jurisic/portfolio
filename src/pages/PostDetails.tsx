@@ -7,8 +7,10 @@ export default function PostDetails() {
     const { language } = useLanguage();
 
     return (
-        <MarkdownFile
-            filePath={`/content/posts/${postName}/${postName}.${language}.md`}
-        />
+        <>
+            <MarkdownFile
+                filePath={`/content/blog/${postName}/${postName}.${language}.md`}
+            />
+        </>
     );
 }
