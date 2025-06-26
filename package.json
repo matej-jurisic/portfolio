@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "highlight.js": "^11.11.1",
+    "marked": "^15.0.12",
+    "marked-highlight": "^2.2.1",
     "portfolio": "file:",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

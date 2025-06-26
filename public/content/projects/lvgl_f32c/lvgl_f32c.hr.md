@@ -28,7 +28,7 @@ Implementirajući funkcionalnost razvijenu u radu, korisnik ne mora razmišljati
 
 ---
 
-## API dizajn (lvgl_f32c.h)
+## API Dizajn (lvgl_f32c.h)
 
 ```c
 // Uključi ili isključi informativne poruke
@@ -125,19 +125,19 @@ lv_obj_t *lv_f32c_load_image(lv_obj_t *screen, lv_image_dsc_t *image_dsc, const 
 
 1. Dohvatiti F32C
 
-    ```
+    ```bash
     git clone https://github.com/f32c/f32c
     ```
 
 2. Sintetizirati F32C na ULX3S pločicu pomoću Lattice Diamond 3.9. Generiranu .bit datoteku prenijeti na pločicu
 
-    ```
+    ```bash
     ujprog ulx3s_sdram_dv_imp11.bit
     ```
 
 3. Postaviti F32C okolinu i prevesti GNU alate
 
-    ```
+    ```bash
     cd f32c/src/compiler
     ./build.sh
     cd /tmp
@@ -148,7 +148,7 @@ lv_obj_t *lv_f32c_load_image(lv_obj_t *screen, lv_image_dsc_t *image_dsc, const 
 
 4. Prevesti C biblioteke i postaviti alat make
 
-    ```
+    ```bash
     echo "export MAKEFILES=~/f32c/src/conf/f32c.mk" >> ~/.bashrc
     source ~/.bashrc
     cd ~/f32c/src/lib/src
@@ -157,13 +157,13 @@ lv_obj_t *lv_f32c_load_image(lv_obj_t *screen, lv_image_dsc_t *image_dsc, const 
 
 5. Dohvatiti LVGL_F32C
 
-    ```
+    ```bash
     git clone https://github.com/matej-jurisic/lvgl_f32c.git
     ```
 
 6. Za daljnje postavljanje dovoljno je pokrenuti skriptu koja se nalazi u projektu
 
-    ```
+    ```bash
     ./setup.sh
     ```
 
@@ -190,13 +190,13 @@ lv_obj_t *lv_f32c_load_image(lv_obj_t *screen, lv_image_dsc_t *image_dsc, const 
 
 8. Kompajlirati kod (preurediti Makefile ako je potrebno)
 
-    ```
+    ```bash
     make
     ```
 
 9. Prenijeti generiranu .bin datoteku na pločicu
 
-    ```
+    ```bash
     ujprog -t -e <ime>.bin
     ```
 

@@ -125,19 +125,19 @@ lv_obj_t *lv_f32c_load_image(lv_obj_t *screen, lv_image_dsc_t *image_dsc, const 
 
 1. Clone F32C
 
-    ```
+    ```bash
     git clone https://github.com/f32c/f32c
     ```
 
 2. Synthesize F32C onto the ULX3S board using Lattice Diamond 3.9. Flash the generated .bit file to the board.
 
-    ```
+    ```bash
     ujprog ulx3s_sdram_dv_imp11.bit
     ```
 
 3. Set up the F32C environment and compile GNU tools
 
-    ```
+    ```bash
     cd f32c/src/compiler
     ./build.sh
     cd /tmp
@@ -148,7 +148,7 @@ lv_obj_t *lv_f32c_load_image(lv_obj_t *screen, lv_image_dsc_t *image_dsc, const 
 
 4. Compile C libraries and set up make
 
-    ```
+    ```bash
     echo "export MAKEFILES=~/f32c/src/conf/f32c.mk" >> ~/.bashrc
     source ~/.bashrc
     cd ~/f32c/src/lib/src
@@ -157,13 +157,13 @@ lv_obj_t *lv_f32c_load_image(lv_obj_t *screen, lv_image_dsc_t *image_dsc, const 
 
 5. Clone LVGL_F32C
 
-    ```
+    ```bash
     git clone https://github.com/matej-jurisic/lvgl_f32c.git
     ```
 
 6. For further setup, simply run the script located in the project
 
-    ```
+    ```bash
     ./setup.sh
     ```
 
@@ -190,13 +190,13 @@ lv_obj_t *lv_f32c_load_image(lv_obj_t *screen, lv_image_dsc_t *image_dsc, const 
 
 8. Compile the code (reconfigure Makefile if necessary)
 
-    ```
+    ```bash
     make
     ```
 
 9. Flash the generated .bin file to the board
 
-    ```
+    ```bash
     ujprog -t -e <ime>.bin
     ```
 
