@@ -68,7 +68,7 @@ export default function Navigation() {
                 </Button>
             </div>
             {linkListVisible && (
-                <div className={styles.navigationLinkList}>
+                <div className={styles.navigationLinkListMobile}>
                     {pages.map((p) => (
                         <span key={p.name} className={styles.navigationLink}>
                             <NavLink
@@ -86,6 +86,23 @@ export default function Navigation() {
                     ))}
                 </div>
             )}
+            <div className={styles.navigationLinkList}>
+                {pages.map((p) => (
+                    <span key={p.name} className={styles.navigationLink}>
+                        <NavLink
+                            key={p.link}
+                            to={p.link}
+                            className={({ isActive }) =>
+                                isActive
+                                    ? `${styles.navigationLink} ${styles.activeLink}`
+                                    : styles.navigationLink
+                            }
+                        >
+                            {p.name}
+                        </NavLink>
+                    </span>
+                ))}
+            </div>
         </div>
     );
 }
