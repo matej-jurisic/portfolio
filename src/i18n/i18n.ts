@@ -9,7 +9,7 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
         loading: "loading",
         posts: "blog",
         experience: "experience",
-        ferStart: "Enrolled FER",
+        ferStart: "Began my bachelor's studies at FER",
         ferDesc: "Bachelor of Science in Computing",
         tsrbEnd: "Graduated at TŠRB",
         tsrbDesc: "Computer Technician",
@@ -18,6 +18,11 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
         adnetDesc: "Full stack developer",
         adnetRailways: "Development of a Railway Traffic Control System",
         fibonacciCaching: "adding caching to a recursive fibonacci function",
+        ferEnd: "Completed bachelor's degree at FER",
+        ferBaccFinProj:
+            "Final project: Adapting the LVGL Graphics Library for the ULX3S FPGA Development Board",
+        ferMStart: "Started my master's degree at FER",
+        compSci: "Computer science",
     },
     hr: {
         headerText: "Matej Jurišić",
@@ -37,5 +42,10 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
         adnetDesc: "Full stack developer",
         adnetRailways: "Razvoj sustava za regulaciju željezničkog prometa",
         fibonacciCaching: "dodavanje cachea rekurzivnoj fibonacci funkciji",
+        ferEnd: "Kraj prijediplomskog studija na FER-u",
+        ferBaccFinProj:
+            "Završni rad: Prilagodba grafičke biblioteke LVGL za FPGA razvojnu pločicu ULX3S",
+        ferMStart: "Početak diplomskog studija na FER-u",
+        compSci: "Računarska znanost",
     },
 };

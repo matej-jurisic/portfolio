@@ -20,14 +20,17 @@ const events: TimelineEvent[] = [
         date: new Date("2023-12-01"),
         notes: ["adnetRailways"],
     },
-    // {
-    //     name: "Kraj prijediplomskog studija na FER-u",
-    //     description: "Inžinjer računarstva",
-    //     date: new Date("2025-07-01"),
-    //     notes: [
-    //         "Završni rad: Prilagodba grafičke biblioteke LVGL za FPGA razvojnu pločicu ULX3S",
-    //     ],
-    // },
+    {
+        name: "ferEnd",
+        description: "univ. bacc. eng. comp",
+        date: new Date("2025-07-01"),
+        notes: ["ferBaccFinProj"],
+    },
+    {
+        name: "ferMStart",
+        description: "compSci",
+        date: new Date("2025-07-01"),
+    },
 ];
 
 export default function Experience() {
