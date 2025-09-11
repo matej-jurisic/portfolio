@@ -1,6 +1,5 @@
 import Timeline from "../components/c_timeline/Timeline";
 import type { TimelineEvent } from "../types/TimelineEvent";
-import Stack from "../ui/ui_stack/Stack";
 
 const events: TimelineEvent[] = [
     {
@@ -34,9 +33,5 @@ const events: TimelineEvent[] = [
 ];
 
 export default function Experience() {
-    return (
-        <Stack height="100%" justifyContent="center">
-            <Timeline events={events} />
-        </Stack>
-    );
+    return <Timeline events={events} />;
 }

@@ -73,6 +73,7 @@ export default function Navigation() {
                         <span key={p.name} className={styles.navigationLink}>
                             <NavLink
                                 key={p.link}
+                                onClick={() => setLinkListVisible(false)}
                                 to={p.link}
                                 className={({ isActive }) =>
                                     isActive

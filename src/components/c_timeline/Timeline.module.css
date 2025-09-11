@@ -1,9 +1,19 @@
 .timeline {
-    position: relative;
-    border-left: 1px solid var(--text-950);
-    color: var(--text-950);
+    max-width: 100%;
+    padding-bottom: 20px;
+    margin-top: 80px;
+}
+
+.now {
+    margin: 20px 0 10px 10px;
+    line-height: 1;
+}
+
+.timelineItems {
     max-width: 600px;
     margin: 0 30px;
+    border-left: 1px solid var(--text-950);
+    color: var(--text-950);
 }
 
 .timelineItem {
@@ -17,8 +27,8 @@
     left: -8px;
     width: 15px;
     height: 15px;
-    border: 1px solid var(--text-950);
     background: var(--background-50);
+    border: 1px solid var(--text-950);
     border-radius: 50%;
 }
 
@@ -32,25 +42,18 @@
 
 .timelineContent p {
     margin: 0.2rem 0 0.5rem;
+    font-size: 0.8em;
+    color: var(--text-800);
+    font-style: italic;
 }
 
-.timelineContent p,
 .timelineContent li {
     font-size: 0.8em;
     color: var(--text-800);
-}
-
-.timelineContent li {
     list-style-type: disc;
 }
 
 .timelineDate {
     font-size: 0.6em;
     color: var(--text-600);
-}
-
-.now {
-    position: relative;
-    left: 10px;
-    top: 20px;
 }

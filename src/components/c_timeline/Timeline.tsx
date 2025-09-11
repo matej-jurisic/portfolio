@@ -10,9 +10,9 @@ export default function Timeline(props: TimelineProps) {
     const { t } = useLanguage();
 
     return (
-        <>
+        <div className={styles.timeline}>
             <p className={styles.now}>{new Date().getFullYear()}</p>
-            <div className={styles.timeline}>
+            <div className={styles.timelineItems}>
                 {props.events
                     .sort((a, b) => b.date.getTime() - a.date.getTime())
                     .map((event, index) => (
@@ -31,6 +31,6 @@ export default function Timeline(props: TimelineProps) {
                         </div>
                     ))}
             </div>
-        </>
+        </div>
     );
 }
