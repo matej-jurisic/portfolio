@@ -2,13 +2,13 @@
 
 **A flexible data tracking system with analytics and advanced filtering.**  
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub--blue?logo=github)](https://github.com/matej-jurisic/Operum)  
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Operum-blue?logo=github)](https://github.com/matej-jurisic/Operum)  
 
 ---
 
 ## Live App
 
-[operum.app](operum.app)
+[https://operum.app](operum.app)
 
 ## Overview  
 
