@@ -8,7 +8,7 @@
 
 ## Live App
 
-[https://operum.app](operum.app)
+[operum.app](https://operum.app)
 
 ## Overview  
 
