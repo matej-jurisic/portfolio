@@ -11,6 +11,10 @@ const projects: ProjectInfo[] = [
         name: "logisim_cpu",
         pathName: "logisim_cpu",
     },
+    {
+        name: "operum",
+        pathName: "operum"
+    }
 ];
 
 export default function ProjectList() {
