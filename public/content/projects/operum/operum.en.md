@@ -21,17 +21,17 @@ Operum is an application for flexible data tracking through customizable tracker
 -   **Trackers with customizable fields**:  
     Create multiple trackers and define fields of various types (`timespan`, `datetime`, `date`, `bool`, `number`, `string`) with the option to mark them as required or optional. After defining fields, users can insert records into the tracker. You can also use existing templates to quick start your tracking.
 
+    ![Entries](/content/projects/operum/entries.png)
+
 -   **Data analytics**:  
     View key analytics metrics on fields such as `sum`, `count`, `average`, `min`, `max`, `stddev` with work in progress to expand into multi-field and configurable analytics dashboard view.
+
+    ![Analyitcs](/content/projects/operum/analytics.png)
 
 -   **Views**:  
     Define custom data views with sorting rules (field + `asc/desc`) and filters (field, operator, and value). Use operators such as `equals`, `not equals`, `greater`, `less`, `greater equal`, `less equal`, `contains`, `does not contain`, `starts with`. Saved views can then be applied to simplify both data browsing and analytics.  
 
----
-
-## Design
-
-![Operum App Design](/content/projects/operum/image.png)
+    ![Views](/content/projects/operum/views.png)
 
 ---
 

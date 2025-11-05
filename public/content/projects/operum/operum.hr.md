@@ -21,17 +21,17 @@ Operum je aplikacija za fleksibilno praćenje podataka putem prilagodljivih trac
 -   **Trackeri s prilagodljivim poljima**:  
     Kreiraj više trackera i definiraj polja različitih tipova (`timespan`, `datetime`, `date`, `bool`, `number`, `string`) uz mogućnost označavanja polja kao obaveznih ili opcionalnih. Nakon definiranja polja, korisnici mogu unositi zapise u tracker. Dostupni su i predlošci za brzi početak korištenja.  
 
+    ![Entries](/content/projects/operum/entries.png)
+
 -   **Analitika podataka**:  
     Pregledaj ključne analitičke metrike na poljima poput `sum`, `count`, `average`, `min`, `max`, `stddev`, uz plan proširenja na višepoljnu i konfigurabilnu analitičku nadzornu ploču.  
 
+    ![Analyitcs](/content/projects/operum/analytics.png)
+
 -   **Pogledi (Views)**:  
-    Definiraj prilagođene poglede nad podacima uz pravila sortiranja (polje + `asc/desc`) i filtre (polje, operator, vrijednost). Dostupni operatori: `equals`, `not equals`, `greater`, `less`, `greater equal`, `less equal`, `contains`, `does not contain`, `starts with`. Spremljeni pogledi mogu se naknadno primijeniti radi jednostavnijeg pregledavanja podataka i analitike.  
+    Definiraj prilagođene poglede nad podacima uz pravila sortiranja (polje + `asc/desc`) i filtre (polje, operator, vrijednost). Dostupni operatori: `equals`, `not equals`, `greater`, `less`, `greater equal`, `less equal`, `contains`, `does not contain`, `starts with`. Spremljeni pogledi mogu se naknadno primijeniti radi jednostavnijeg pregledavanja podataka i analitike. 
 
----
-
-## Dizajn  
-
-![Operum App Dizajn](/content/projects/operum/image.png)
+    ![Views](/content/projects/operum/views.png) 
 
 ---
 

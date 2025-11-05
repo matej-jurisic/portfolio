@@ -28,7 +28,7 @@ const events: TimelineEvent[] = [
     {
         name: "ferMStart",
         description: "compSci",
-        date: new Date("2025-07-01"),
+        date: new Date("2025-10-01"),
     },
 ];
 
