@@ -17,6 +17,10 @@ body {
     font-style: normal;
 }
 
+h3 {
+    font-family: "Geist", sans-serif;
+}
+
 #root {
     display: flex;
     justify-content: center;
