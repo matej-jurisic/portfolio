@@ -8,7 +8,7 @@
 
 ## Live Aplikacija  
 
-🔗 [operum.app](https://operum.app)
+[operum.app](https://operum.app)
 
 ## Pregled  
 
