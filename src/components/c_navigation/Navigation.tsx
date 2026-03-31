@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type RefObject } from "react";
+import { useCallback, useEffect, useRef, useState, type RefObject } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../context/ApplicationContext";
@@ -28,7 +28,8 @@ export default function Navigation() {
     const [linkListVisible, setLinkListVisible] = useState(false);
     const navRef = useRef<HTMLDivElement>(null);
 
-    useOutsideAlert(navRef, () => setLinkListVisible(false));
+    const closeMenu = useCallback(() => setLinkListVisible(false), []);
+    useOutsideAlert(navRef, closeMenu);
 
     const pages = [
         {

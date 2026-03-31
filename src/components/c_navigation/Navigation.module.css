@@ -29,8 +29,8 @@
     color: var(--text-900);
 }
 
-.activeLink {
-    border-bottom: 1px solid var(--text-950);
+.navigationLink a.activeLink {
+    text-decoration: underline;
 }
 
 .navigationHamburger {
