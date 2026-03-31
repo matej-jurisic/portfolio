@@ -32,7 +32,15 @@ Operum je osobna i kolaborativna aplikacija za praćenje podataka. Umjesto rada 
     ![Views](/content/projects/operum/views.png)
 
 -   **Analitika**:  
-    Dodajte grafove trackeru kako biste pretvorili sirove unose u vizualne sažetke. Konfigurirajte koje podatke svaki graf koristi i pregledajte sve grafove u masonry rasporedu. Grafovi se ažuriraju kako se mijenjaju vaši podaci.
+    Dodajte do 10 grafova trackeru kako biste pretvorili sirove unose u vizualne sažetke, prikazane u masonry rasporedu s mogućnošću premještanja. Dostupno pet vrsta grafova:
+
+    - **Pojedinačna vrijednost** — jedna izračunata metrika istaknuta u prvom planu: count, sum, min, max, average, standardna devijacija ili postotci za boolean polja
+    - **Linijski graf** — unosi prikazani duž X/Y osi; podržava sirove linije, agregirane sume grupirane po X ili kumulativne ukupne vrijednosti
+    - **Točkasti graf** — numerički X/Y oblak točaka za otkrivanje korelacija između dva numerička polja
+    - **Kružni graf (Donut)** — grupira unose po kategorijskom polju i sumira numeričko polje po grupi
+    - **Kalendar** — mapira unose na polje datuma i označava svaku točku vrijednošću drugog polja
+
+    Svaki graf mapira polja trackera na uloge koje su mu potrebne. Sučelje prikazuje samo polja čiji je tip kompatibilan s pojedinom ulogom. Analitike se opcionalno mogu ograničiti na određeni pogled.
 
     ![Analyitcs](/content/projects/operum/analytics.png)
 

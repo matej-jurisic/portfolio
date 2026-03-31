@@ -32,7 +32,15 @@ Operum is a personal and collaborative data tracking app. Instead of wrestling w
     ![Views](/content/projects/operum/views.png)
 
 -   **Analytics**:  
-    Add charts to a tracker to turn raw entries into visual summaries. Configure what data each chart uses and see all charts laid out in a masonry grid. Charts update as your data changes.
+    Add up to 10 charts to a tracker to turn raw entries into visual summaries, displayed in a draggable masonry grid. Five chart types available:
+
+    - **Single Value** — one calculated metric front and center: count, sum, min, max, average, standard deviation, or boolean percentages
+    - **Line Chart** — entries plotted along X/Y axes; supports raw lines, aggregated sums grouped by X, or cumulative running totals
+    - **Scatter Chart** — numeric X/Y point cloud for spotting correlations between two number fields
+    - **Donut Chart** — groups entries by a category field and sums a numeric field per group
+    - **Calendar** — maps entries to a date field and labels each point with another field's value
+
+    Each chart maps your tracker's fields to the roles it needs. The UI only shows fields whose type is compatible with each role. Analytics can optionally be scoped to a specific view.
 
     ![Analyitcs](/content/projects/operum/analytics.png)
 
