@@ -42,7 +42,7 @@ Operum is a personal and collaborative data tracking app. Instead of wrestling w
 
     Each chart maps your tracker's fields to the roles it needs. The UI only shows fields whose type is compatible with each role. Analytics can optionally be scoped to a specific view.
 
-    ![Analyitcs](/content/projects/operum/analytics.png)
+    ![Analytics](/content/projects/operum/analytics.png)
 
 -   **Collaboration**:  
     Share trackers with other users. Add teammates or friends to a tracker so they can view and contribute entries.

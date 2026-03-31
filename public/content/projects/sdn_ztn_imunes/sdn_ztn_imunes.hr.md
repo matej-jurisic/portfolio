@@ -2,7 +2,7 @@
 
 **Implementacija Zero Trust Network arhitekture u IMUNES mrežnom emulatoru korištenjem SDN principa i Ryu kontrolera.**
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub--blue?logo=github)](https://github.com/matej-jurisic/sdn-ztn-imunes)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-sdn--ztn--imunes-blue?logo=github)](https://github.com/matej-jurisic/sdn-ztn-imunes)
 
 ---
 
@@ -35,7 +35,7 @@ Ovaj projekt implementira **Zero Trust Network (ZTN)** arhitekturu unutar **IMUN
 
 ## Grupni projekt
 
-Ovaj projekt je grupni rad izađen na FER-u. Na projektu su sudjelovali Danijel Živković, Ivona Tomašić, Janom Komerički, Karlo Baljak, Lovro Kekez i Matej Jurišić (ja).
+Ovaj projekt je grupni rad izađen na FER-u. Na projektu su sudjelovali Danijel Živković, Ivona Tomašić, Janom Komerički, Karlo Baljak i Lovro Kekez.
 
 ### Moje odgovornosti
 
@@ -146,5 +146,5 @@ Autor: _Matej Jurišić_
 Email: [mjurisic812@gmail.com](mailto:mjurisic812@gmail.com)
 
 Datum: 17/06/2025  
-Licensa: MIT  
-Repozitorij: [github.com/matej-jurisic/](https://github.com/matej-jurisic/)
+Licenca: MIT  
+Repozitorij: [github.com/matej-jurisic/sdn-ztn-imunes](https://github.com/matej-jurisic/sdn-ztn-imunes)

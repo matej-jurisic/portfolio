@@ -8,7 +8,7 @@
 
 ## Overview
 
-As a result of this work, the "lvgl_f32c.h" API is available, enabling the use of the LVGL library on the ULX3S board through 3 simple steps::
+As a result of this work, the "lvgl_f32c.h" API is available, enabling the use of the LVGL library on the ULX3S board through 3 simple steps:
 
 1. Calling the initialization function at the beginning of the program
 2. Registering an object that represents a single LVGL display

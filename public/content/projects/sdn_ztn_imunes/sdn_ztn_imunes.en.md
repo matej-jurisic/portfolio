@@ -2,17 +2,17 @@
 
 **Implementation of a Zero Trust Network architecture inside the IMUNES network emulator using SDN principles and a Ryu controller.**
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub--blue?logo=github)](https://github.com/matej-jurisic/sdn-ztn-imunes)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-sdn--ztn--imunes-blue?logo=github)](https://github.com/matej-jurisic/sdn-ztn-imunes)
 
 ---
 
-## Introduction
+## Overview
 
 This project implements a **Zero Trust Network (ZTN)** architecture within the **IMUNES** network emulator using **SDN (Software-Defined Networking)** principles. The system is based on dynamic network policy management and user authorization through a Ryu SDN controller and a Policy dashboard that communicates with the network infrastructure in real time.
 
 ---
 
-## Features / Functionality
+## Features
 
 -   **Zero Trust policies**: Resource access is controlled per user and device — every access request must be explicitly authorized.
 -   **SDN traffic management**: Open vSwitch nodes are managed by a central Ryu controller that dynamically installs flow rules based on active policies.
@@ -147,4 +147,4 @@ Email: [mjurisic812@gmail.com](mailto:mjurisic812@gmail.com)
 
 Date: 17/06/2025  
 License: MIT  
-Repository: [github.com/matej-jurisic/](https://github.com/matej-jurisic/)
+Repository: [github.com/matej-jurisic/sdn-ztn-imunes](https://github.com/matej-jurisic/sdn-ztn-imunes)

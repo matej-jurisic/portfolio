@@ -8,7 +8,7 @@
 
 ## Overview
 
-This project contains the design of a simple processor using basic logic components available in Logisim. The processor supports 81 different intstructions and can execute programs such as prime factorization and Fibonacci sequence calculation. The goal of the project was to understand the fundamentals of processor operation at the lowest level.
+This project contains the design of a simple processor using basic logic components available in Logisim. The processor supports 81 different instructions and can execute programs such as prime factorization and Fibonacci sequence calculation. The goal of the project was to understand the fundamentals of processor operation at the lowest level.
 
 ---
 
@@ -29,7 +29,7 @@ This project contains the design of a simple processor using basic logic compone
 
 ---
 
-## Instalacija / Pokretanje
+## Installation / Running
 
 As part of the project, a cpu.circ file is available and needs to be opened in Logisim. Machine code can be loaded from an external file or manually entered into the program memory (ROM).
 

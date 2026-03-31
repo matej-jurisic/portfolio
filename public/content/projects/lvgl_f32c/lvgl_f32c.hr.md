@@ -206,5 +206,5 @@ Autor: _Matej Jurišić_
 Email: [mjurisic812@gmail.com](mailto:mjurisic812@gmail.com)
 
 Datum: 17/06/2025  
-Licensa: MIT  
+Licenca: MIT  
 Repozitorij: [github.com/matej-jurisic/lvgl_f32c](https://github.com/matej-jurisic/lvgl_f32c)

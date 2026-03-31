@@ -42,7 +42,7 @@ Operum je osobna i kolaborativna aplikacija za praćenje podataka. Umjesto rada 
 
     Svaki graf mapira polja trackera na uloge koje su mu potrebne. Sučelje prikazuje samo polja čiji je tip kompatibilan s pojedinom ulogom. Analitike se opcionalno mogu ograničiti na određeni pogled.
 
-    ![Analyitcs](/content/projects/operum/analytics.png)
+    ![Analytics](/content/projects/operum/analytics.png)
 
 -   **Suradnja**:  
     Dijelite trackere s drugim korisnicima. Dodajte suradnike ili prijatelje u tracker kako bi mogli pregledavati i dodavati unose.
@@ -66,5 +66,6 @@ Operum je osobna i kolaborativna aplikacija za praćenje podataka. Umjesto rada 
 Autor: _Matej Jurišić_  
 Email: [mjurisic812@gmail.com](mailto:mjurisic812@gmail.com)  
 
+Datum: 15/09/2025  
 Licenca: MIT  
 Repozitorij: [github.com/matej-jurisic/Operum](https://github.com/matej-jurisic/Operum)  
