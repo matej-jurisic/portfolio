@@ -18,11 +18,8 @@
 
 .navigationLinkListMobile {
     gap: 15px;
-    padding: 20px;
-    border: 1px solid var(--primary-900);
-    background: var(--transparent);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    padding: 20px 0;
+    background: var(--background-50);
     color: var(--text-950);
     display: none;
 }
@@ -41,12 +38,17 @@
 }
 
 @media (max-width: 1100px) {
-    .navigationHamburger {
-        display: inline;
-    }
     .navigation {
-        font-size: 25px;
-        width: calc(100% - 30px);
+        width: 100%;
+        padding: 0;
+        gap: 0;
+        font-size: 20px;
+        background: var(--background-50);
+        border-bottom: 1px solid var(--background-300);
+    }
+    .navigationHamburger {
+        display: flex;
+        padding: 14px 16px;
     }
     .navigationLinkList {
         display: none;
@@ -54,5 +56,7 @@
     .navigationLinkListMobile {
         display: flex;
         flex-direction: column;
+        padding: 8px 16px 16px;
+        gap: 16px;
     }
 }

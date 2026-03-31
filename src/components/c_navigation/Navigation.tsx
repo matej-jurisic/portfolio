@@ -26,17 +26,9 @@ function useOutsideAlert(
 export default function Navigation() {
     const { t } = useLanguage();
     const [linkListVisible, setLinkListVisible] = useState(false);
-    const [width, setWidth] = useState<number>();
     const navRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        setLinkListVisible(window.innerWidth > 1100);
-        setWidth(window.innerWidth);
-    }, [window.innerWidth]);
-
-    useOutsideAlert(navRef, () => {
-        if (width && width <= 1100) setLinkListVisible(false);
-    });
+    useOutsideAlert(navRef, () => setLinkListVisible(false));
 
     const pages = [
         {
@@ -61,7 +53,7 @@ export default function Navigation() {
         <div className={styles.navigation} ref={navRef}>
             <div className={styles.navigationHamburger}>
                 <Button
-                    variant={linkListVisible ? "primary" : "glass"}
+                    variant="secondary"
                     onClick={() => setLinkListVisible((prev) => !prev)}
                 >
                     <GiHamburgerMenu />
