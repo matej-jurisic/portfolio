@@ -50,7 +50,7 @@ This project was built as a group project at FER together with Danijel Živkovi�
 
 ## Network Topology
 
-![Network topology overview](topology.png)
+![Network topology overview](/content/projects/sdn_ztn_imunes/topology.png)
 
 | Group | Nodes | Role |
 | --- | --- | --- |
@@ -131,7 +131,7 @@ The web UI available on port **5173** can be accessed from the host system if th
 - Add new entities
 - Modify existing policies (allow/deny) with immediate effect on network traffic
 
-![Policy API web interface](policies.png)
+![Policy API web interface](/content/projects/sdn_ztn_imunes/policies.png)
 
 Typical workflow for granting new access:
 1. **Users** — add a user

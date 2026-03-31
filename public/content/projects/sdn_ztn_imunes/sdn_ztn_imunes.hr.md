@@ -50,7 +50,7 @@ Ovaj projekt je grupni rad izađen na FER-u. Na projektu su sudjelovali Danijel 
 
 ## Topologija mreže
 
-![Prikaz topologije mreže](topology.png)
+![Prikaz topologije mreže](/content/projects/sdn_ztn_imunes/topology.png)
 
 | Grupa | Čvorovi | Uloga |
 | --- | --- | --- |
@@ -131,7 +131,7 @@ Web sučelju dostupnom na portu **5173** možete pristupiti s host sustava ako j
 - Dodavanje novih entiteta
 - Izmjenu postojećih politika (allow/deny) s trenutnim učinkom na mrežni promet
 
-![Prikaz web sučelja Policy API-a](policies.png)
+![Prikaz web sučelja Policy API-a](/content/projects/sdn_ztn_imunes/policies.png)
 
 Tipičan workflow za dodavanje novog pristupa:
 1. **Users** — dodati korisnika
