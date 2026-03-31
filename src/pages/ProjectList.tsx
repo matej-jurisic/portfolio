@@ -14,6 +14,10 @@ const projects: ProjectInfo[] = [
     {
         name: "operum",
         pathName: "operum"
+    },
+    {
+        name: "sdn_ztn_imunes",
+        pathName: "sdn_ztn_imunes"
     }
 ];
 
