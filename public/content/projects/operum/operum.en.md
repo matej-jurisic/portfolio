@@ -1,6 +1,6 @@
 # Operum  
 
-**A flexible data tracking system with analytics and advanced filtering.**  
+**A personal and collaborative data tracking app.**  
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Operum-blue?logo=github)](https://github.com/matej-jurisic/Operum)  
 
@@ -12,35 +12,46 @@
 
 ## Overview  
 
-Operum is an application for flexible data tracking through customizable trackers. It allows users to define their own fields (of different data types) and enter records, while also providing advanced analytics and customizable views for easier data management and analysis.  
+Operum is a personal and collaborative data tracking app. Instead of wrestling with spreadsheets, you define exactly the data you want to track, how to view it, and how to visualize it — all in one place.
 
 ---
 
 ## Features  
 
--   **Trackers with customizable fields**:  
-    Create multiple trackers and define fields of various types (`timespan`, `datetime`, `date`, `bool`, `number`, `string`) with the option to mark them as required or optional. After defining fields, users can insert records into the tracker. You can also use existing templates to quick start your tracking.
+-   **Custom Trackers**:  
+    A tracker is a collection of data you care about — a reading list, a workout log, a bug database, anything. Define the structure by adding up to 25 fields with the types that make sense for your data, each with its own label, description, ordering, and visibility.
 
     ![Entries](/content/projects/operum/entries.png)
 
--   **Data analytics**:  
-    View key analytics metrics on fields such as `sum`, `count`, `average`, `min`, `max`, `stddev` with work in progress to expand into multi-field and configurable analytics dashboard view.
+-   **Entries**:  
+    Once a tracker is set up, add entries filling in the fields you've defined. Create, edit, and delete individual entries or bulk-delete a selection. Import data directly from a CSV file or export your data to CSV at any time.
+
+-   **Views**:  
+    A view is a saved lens on your tracker's data. Filter by field values, set sort orders, and choose which columns are visible. Each tracker can have a default view that opens automatically.
+
+    ![Views](/content/projects/operum/views.png)
+
+-   **Analytics**:  
+    Add charts to a tracker to turn raw entries into visual summaries. Configure what data each chart uses and see all charts laid out in a masonry grid. Charts update as your data changes.
 
     ![Analyitcs](/content/projects/operum/analytics.png)
 
--   **Views**:  
-    Define custom data views with sorting rules (field + `asc/desc`) and filters (field, operator, and value). Use operators such as `equals`, `not equals`, `greater`, `less`, `greater equal`, `less equal`, `contains`, `does not contain`, `starts with`. Saved views can then be applied to simplify both data browsing and analytics.  
+-   **Collaboration**:  
+    Share trackers with other users. Add teammates or friends to a tracker so they can view and contribute entries.
 
-    ![Views](/content/projects/operum/views.png)
+-   **Templates**:  
+    Admins can publish public template trackers. Browse available templates and build on top of them instead of starting from scratch.
+
+-   **Accounts & Access**:  
+    Sign up with email and password or log in with Google. Includes email confirmation on registration, account lockout after repeated failed login attempts, and two roles: **User** (create and manage trackers, collaborate) and **Admin** (everything, plus user management and platform configuration).
 
 ---
 
 ## Technologies / Tools Used  
 
--   **Backend**: ASP.NET Core, Entity Framework Core, PostgreSQL, xUnit  
--   **Frontend**: React, TypeScript
--	**Deployment**: Hetzner, Docker, Github Actions
--   **Other**: JWT authentication
+-   **Backend**: .NET 9, ASP.NET Core, Entity Framework Core, PostgreSQL  
+-   **Frontend**: React 19, TypeScript, Vite, Mantine, MobX  
+-   **Infrastructure**: Docker, Nginx, Prometheus, Grafana
 
 ---
 

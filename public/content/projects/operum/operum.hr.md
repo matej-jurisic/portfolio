@@ -1,6 +1,6 @@
 # Operum  
 
-**Fleksibilan sustav za praćenje podataka s analitikom i naprednim filtriranjem.**  
+**Osobna i kolaborativna aplikacija za praćenje podataka.**  
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Operum-blue?logo=github)](https://github.com/matej-jurisic/Operum)  
 
@@ -12,35 +12,46 @@
 
 ## Pregled  
 
-Operum je aplikacija za fleksibilno praćenje podataka putem prilagodljivih trackera. Omogućuje korisnicima definiranje vlastitih polja (različitih tipova podataka) i unos zapisa, a uz to pruža i naprednu analitiku te prilagodljive poglede radi jednostavnijeg upravljanja i analize podataka.  
+Operum je osobna i kolaborativna aplikacija za praćenje podataka. Umjesto rada s proračunskim tablicama, definirate točno koje podatke želite pratiti, kako ih pregledavati i kako ih vizualizirati — sve na jednom mjestu.
 
 ---
 
 ## Značajke  
 
--   **Trackeri s prilagodljivim poljima**:  
-    Kreiraj više trackera i definiraj polja različitih tipova (`timespan`, `datetime`, `date`, `bool`, `number`, `string`) uz mogućnost označavanja polja kao obaveznih ili opcionalnih. Nakon definiranja polja, korisnici mogu unositi zapise u tracker. Dostupni su i predlošci za brzi početak korištenja.  
+-   **Prilagodljivi trackeri**:  
+    Tracker je kolekcija podataka koji su vam važni — popis za čitanje, dnevnik treninga, baza grešaka, bilo što. Definirajte strukturu dodavanjem do 25 polja s tipovima koji odgovaraju vašim podacima, svako s vlastitom oznakom, opisom, redoslijedom i vidljivošću.
 
     ![Entries](/content/projects/operum/entries.png)
 
--   **Analitika podataka**:  
-    Pregledaj ključne analitičke metrike na poljima poput `sum`, `count`, `average`, `min`, `max`, `stddev`, uz plan proširenja na višepoljnu i konfigurabilnu analitičku nadzornu ploču.  
+-   **Unosi**:  
+    Nakon postavljanja trackera, dodajte unose ispunjavanjem definiranih polja. Kreirajte, uredite i brišite pojedinačne unose ili masovno obrišite odabrane. Uvezite podatke iz CSV datoteke ili ih izvezite u CSV u bilo kojem trenutku.
+
+-   **Pogledi (Views)**:  
+    Pogled je spremljena perspektiva nad podacima trackera. Filtrirajte po vrijednostima polja, postavite redoslijed sortiranja i odaberite koje su kolone vidljive. Svaki tracker može imati zadani pogled koji se automatski otvara.
+
+    ![Views](/content/projects/operum/views.png)
+
+-   **Analitika**:  
+    Dodajte grafove trackeru kako biste pretvorili sirove unose u vizualne sažetke. Konfigurirajte koje podatke svaki graf koristi i pregledajte sve grafove u masonry rasporedu. Grafovi se ažuriraju kako se mijenjaju vaši podaci.
 
     ![Analyitcs](/content/projects/operum/analytics.png)
 
--   **Pogledi (Views)**:  
-    Definiraj prilagođene poglede nad podacima uz pravila sortiranja (polje + `asc/desc`) i filtre (polje, operator, vrijednost). Dostupni operatori: `equals`, `not equals`, `greater`, `less`, `greater equal`, `less equal`, `contains`, `does not contain`, `starts with`. Spremljeni pogledi mogu se naknadno primijeniti radi jednostavnijeg pregledavanja podataka i analitike. 
+-   **Suradnja**:  
+    Dijelite trackere s drugim korisnicima. Dodajte suradnike ili prijatelje u tracker kako bi mogli pregledavati i dodavati unose.
 
-    ![Views](/content/projects/operum/views.png) 
+-   **Predlošci**:  
+    Administratori mogu objaviti javne predloške trackera. Pregledajte dostupne predloške i nadogradite ih umjesto početka od nule.
+
+-   **Korisnici i pristup**:  
+    Registrirajte se s e-mailom i lozinkom ili se prijavite putem Googlea. Uključuje potvrdu e-maila pri registraciji, zaključavanje računa nakon višestrukih neuspjelih pokušaja prijave te dvije uloge: **Korisnik** (kreiranje i upravljanje trackerima, suradnja) i **Administrator** (sve, uz upravljanje korisnicima i konfiguraciju platforme).
 
 ---
 
 ## Tehnologije / Korišteni alati  
 
--   **Backend**: ASP.NET Core, Entity Framework Core, PostgreSQL, xUnit  
--   **Frontend**: React, TypeScript  
--   **Deployment**: Linux, Docker, GitHub Actions  
--   **Ostalo**: JWT autentikacija  
+-   **Backend**: .NET 9, ASP.NET Core, Entity Framework Core, PostgreSQL  
+-   **Frontend**: React 19, TypeScript, Vite, Mantine, MobX  
+-   **Infrastruktura**: Docker, Nginx, Prometheus, Grafana
 
 ---
 
