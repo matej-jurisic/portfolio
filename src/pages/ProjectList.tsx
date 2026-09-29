@@ -18,6 +18,14 @@ const projects: ProjectInfo[] = [
     {
         name: "sdn_ztn_imunes",
         pathName: "sdn_ztn_imunes"
+    },
+    {
+        name: "photo_competition",
+        pathName: "photo_competition"
+    },
+    {
+        name: "loom",
+        pathName: "loom"
     }
 ];
 

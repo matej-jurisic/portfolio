@@ -12,46 +12,41 @@
 
 ## Pregled  
 
-Operum je osobna i kolaborativna aplikacija za praćenje podataka. Umjesto rada s proračunskim tablicama, definirate točno koje podatke želite pratiti, kako ih pregledavati i kako ih vizualizirati — sve na jednom mjestu.
+Operum je osobna i kolaborativna aplikacija za praćenje podataka. Umjesto rada s proračunskim tablicama, definirate točno koje podatke želite pratiti, kako ih pregledavati i kako ih vizualizirati, sve na jednom mjestu.
 
 ---
 
 ## Značajke  
 
 -   **Prilagodljivi trackeri**:  
-    Tracker je kolekcija podataka koji su vam važni — popis za čitanje, dnevnik treninga, baza grešaka, bilo što. Definirajte strukturu dodavanjem do 25 polja s tipovima koji odgovaraju vašim podacima, svako s vlastitom oznakom, opisom, redoslijedom i vidljivošću.
+    Tracker je kolekcija podataka koji su vam važni: popis za čitanje, dnevnik treninga, baza grešaka, bilo što. Definirajte strukturu dodavanjem do 25 polja (string, number, bool, date, datetime, timespan ili referenca na drugi tracker), svako s vlastitom oznakom, opisom i opcijama. Trackere je moguće kreirati korak po korak, klonirati iz predloška ili kopirati zajedno s poljima, konstantama i pogledima.
 
-    ![Entries](/content/projects/operum/entries.png)
+-   **Pametna polja**:  
+    Polja mogu biti **izračunata** iz formule poput `{End} - {Start}`, imati **zadane vrijednosti** (fiksne, relativne poput "početak mjeseca" ili vođene konstantama) te **uvjetnu vidljivost** u obrascu za unos. **Konstante** su imenovane vrijednosti za višekratnu upotrebu s do 6 uvjetnih varijanti po prioritetu. **Referentna polja** povezuju unose među trackerima, a skup polja moguće je izdvojiti u novi tracker radi normalizacije ponavljajućih podataka.
 
 -   **Unosi**:  
-    Nakon postavljanja trackera, dodajte unose ispunjavanjem definiranih polja. Kreirajte, uredite i brišite pojedinačne unose ili masovno obrišite odabrane. Uvezite podatke iz CSV datoteke ili ih izvezite u CSV u bilo kojem trenutku.
+    Kreirajte, uredite, duplicirajte i brišite unose ili masovno obrišite i preračunajte odabrane. Dijalog za brzi unos bilježi unos u nekoliko tipki. Uvezite podatke iz CSV-a ili ih izvezite u bilo kojem trenutku, po želji filtrirane po pogledu.
 
 -   **Pogledi (Views)**:  
-    Pogled je spremljena perspektiva nad podacima trackera. Filtrirajte po vrijednostima polja, postavite redoslijed sortiranja i odaberite koje su kolone vidljive. Svaki tracker može imati zadani pogled koji se automatski otvara.
+    Pogled je spremljena perspektiva nad podacima trackera, sastavljena od filter i sort upita za višekratnu upotrebu. Dinamički filteri datuma (`now`, `today`, `end of year` s pomacima) održavaju poglede aktualnima kroz vrijeme.
 
-    ![Views](/content/projects/operum/views.png)
+-   **Nadzorne ploče (Dashboards)**:  
+    Gradite nadzorne ploče iz mreže widgeta koje možete povlačiti: grafovi, tablice unosa, gumbi za brzi unos, filteri, bilješke te spremnici i kartice koji grupiraju druge widgete. Desktop i mobilni raspored spremaju se zasebno, a filter widgeti sužavaju sve widgete koji ih prate.
 
--   **Analitika**:  
-    Dodajte do 10 grafova trackeru kako biste pretvorili sirove unose u vizualne sažetke, prikazane u masonry rasporedu s mogućnošću premještanja. Dostupno pet vrsta grafova:
+-   **Analitika i Explore**:  
+    Grafovi se računaju pri upitu iz jednog ili više trackera: jedna vrijednost, napredak prema cilju, linijski, stupčasti, scatter, donut i kalendar. Explore je prostor za jednokratne izračune čija se cijela konfiguracija nalazi u URL-u, a svaki rezultat moguće je ubaciti na nadzornu ploču.
 
-    - **Pojedinačna vrijednost** — jedna izračunata metrika istaknuta u prvom planu: count, sum, min, max, average, standardna devijacija ili postotci za boolean polja
-    - **Linijski graf** — unosi prikazani duž X/Y osi; podržava sirove linije, agregirane sume grupirane po X ili kumulativne ukupne vrijednosti
-    - **Točkasti graf** — numerički X/Y oblak točaka za otkrivanje korelacija između dva numerička polja
-    - **Kružni graf (Donut)** — grupira unose po kategorijskom polju i sumira numeričko polje po grupi
-    - **Kalendar** — mapira unose na polje datuma i označava svaku točku vrijednošću drugog polja
+-   **Integracije**:  
+    Uvezite podatke iz intervals.icu (periodično dohvaćanje) i Firefly III (webhook) i preslikajte ih na polja trackera. Uvoz radi upsert po stabilnom ID-u pa ponovna sinkronizacija nikad ne stvara duplikate, a vjerodajnice su šifrirane u mirovanju.
 
-    Svaki graf mapira polja trackera na uloge koje su mu potrebne. Sučelje prikazuje samo polja čiji je tip kompatibilan s pojedinom ulogom. Analitike se opcionalno mogu ograničiti na određeni pogled.
-
-    ![Analytics](/content/projects/operum/analytics.png)
+-   **Obavijesti**:  
+    Pravila upozorenja po trackeru, zakazana ili aktivirana kad uvjet počne vrijediti, dostavljaju se kao push obavijesti preglednika i u inboxu unutar aplikacije, s prilagodljivim predlošcima poruka.
 
 -   **Suradnja**:  
-    Dijelite trackere s drugim korisnicima. Dodajte suradnike ili prijatelje u tracker kako bi mogli pregledavati i dodavati unose.
+    Dijelite trackere po korisničkom imenu s odvojenim dozvolama za uređivanje podataka i uređivanje sheme.
 
--   **Predlošci**:  
-    Administratori mogu objaviti javne predloške trackera. Pregledajte dostupne predloške i nadogradite ih umjesto početka od nule.
-
--   **Korisnici i pristup**:  
-    Registrirajte se s e-mailom i lozinkom ili se prijavite putem Googlea. Uključuje potvrdu e-maila pri registraciji, zaključavanje računa nakon višestrukih neuspjelih pokušaja prijave te dvije uloge: **Korisnik** (kreiranje i upravljanje trackerima, suradnja) i **Administrator** (sve, uz upravljanje korisnicima i konfiguraciju platforme).
+-   **Korisnici i administracija**:  
+    Registracija e-mailom i lozinkom s potvrdom ili prijava putem Googlea, uz zaključavanje računa nakon neuspjelih pokušaja. Administratori upravljaju korisnicima i trackerima te objavljuju javne predloške. Paleta naredbi `Ctrl`+`K` vodi bilo kamo u aplikaciji.
 
 ---
 

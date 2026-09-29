@@ -12,46 +12,41 @@
 
 ## Overview  
 
-Operum is a personal and collaborative data tracking app. Instead of wrestling with spreadsheets, you define exactly the data you want to track, how to view it, and how to visualize it — all in one place.
+Operum is a personal and collaborative data tracking app. Instead of wrestling with spreadsheets, you define exactly the data you want to track, how to view it, and how to visualize it, all in one place.
 
 ---
 
 ## Features  
 
 -   **Custom Trackers**:  
-    A tracker is a collection of data you care about — a reading list, a workout log, a bug database, anything. Define the structure by adding up to 25 fields with the types that make sense for your data, each with its own label, description, ordering, and visibility.
+    A tracker is a collection of data you care about: a reading list, a workout log, a bug database, anything. Define the structure by adding up to 25 fields (string, number, bool, date, datetime, timespan, or a reference to another tracker), each with its own label, description and options. Trackers can be created step by step, cloned from a template, or copied along with their fields, constants and views.
 
-    ![Entries](/content/projects/operum/entries.png)
+-   **Smart Fields**:  
+    Fields can be **calculated** from a formula such as `{End} - {Start}`, get **default values** (fixed, relative like "start of month", or driven by constants), and be **conditionally visible** in the entry form. **Constants** are named reusable values with up to 6 prioritised conditional variants. **Reference fields** link entries across trackers, and a set of fields can be extracted into a new tracker to normalise repeated data.
 
 -   **Entries**:  
-    Once a tracker is set up, add entries filling in the fields you've defined. Create, edit, and delete individual entries or bulk-delete a selection. Import data directly from a CSV file or export your data to CSV at any time.
+    Create, edit, duplicate and delete entries, or bulk-delete and bulk-recalculate a selection. A quick-add dialog captures an entry in a few keystrokes. Import data from CSV or export it at any time, optionally filtered to a view.
 
 -   **Views**:  
-    A view is a saved lens on your tracker's data. Filter by field values, set sort orders, and choose which columns are visible. Each tracker can have a default view that opens automatically.
+    A view is a saved lens on your tracker's data, built from reusable filter and sort queries. Dynamic date filters (`now`, `today`, `end of year` with offsets) keep views live over time.
 
-    ![Views](/content/projects/operum/views.png)
+-   **Dashboards**:  
+    Build dashboards from a draggable grid of widgets: charts, entry tables, quick-add buttons, filters, notes, and containers or tabs that group other widgets. Desktop and mobile layouts are stored separately, and filter widgets narrow every widget that follows them.
 
--   **Analytics**:  
-    Add up to 10 charts to a tracker to turn raw entries into visual summaries, displayed in a draggable masonry grid. Five chart types available:
+-   **Analytics & Explore**:  
+    Charts are computed at query time from one or more trackers: single value, goal progress, line, bar, scatter, donut and calendar. Explore is a scratchpad for one-off calculations whose whole setup lives in the URL, and any result can be dropped onto a dashboard.
 
-    - **Single Value** — one calculated metric front and center: count, sum, min, max, average, standard deviation, or boolean percentages
-    - **Line Chart** — entries plotted along X/Y axes; supports raw lines, aggregated sums grouped by X, or cumulative running totals
-    - **Scatter Chart** — numeric X/Y point cloud for spotting correlations between two number fields
-    - **Donut Chart** — groups entries by a category field and sums a numeric field per group
-    - **Calendar** — maps entries to a date field and labels each point with another field's value
+-   **Integrations**:  
+    Import data from intervals.icu (scheduled pull) and Firefly III (webhook push) and map it onto tracker fields. Imports upsert on a stable id, so re-syncing never duplicates rows, and credentials are encrypted at rest.
 
-    Each chart maps your tracker's fields to the roles it needs. The UI only shows fields whose type is compatible with each role. Analytics can optionally be scoped to a specific view.
-
-    ![Analytics](/content/projects/operum/analytics.png)
+-   **Notifications**:  
+    Per-tracker alert rules, scheduled or triggered when a condition starts matching, delivered as browser push notifications and in an in-app inbox, with customisable message templates.
 
 -   **Collaboration**:  
-    Share trackers with other users. Add teammates or friends to a tracker so they can view and contribute entries.
+    Share trackers by username with separate permissions for editing data and editing the schema.
 
--   **Templates**:  
-    Admins can publish public template trackers. Browse available templates and build on top of them instead of starting from scratch.
-
--   **Accounts & Access**:  
-    Sign up with email and password or log in with Google. Includes email confirmation on registration, account lockout after repeated failed login attempts, and two roles: **User** (create and manage trackers, collaborate) and **Admin** (everything, plus user management and platform configuration).
+-   **Accounts & Administration**:  
+    Email/password sign-up with confirmation, or Google login, plus account lockout after failed attempts. Admins manage users and trackers and publish public templates. A `Ctrl`+`K` command palette jumps anywhere in the app.
 
 ---
 

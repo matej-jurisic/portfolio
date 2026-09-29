@@ -6,6 +6,7 @@ import { useLanguage } from "../../context/ApplicationContext";
 
 interface MarkdownFileProps {
     filePath: string;
+    onTitle?: (title: string | null) => void;
 }
 
 const marked = new Marked(
@@ -43,6 +44,8 @@ export default function MarkdownFile(props: MarkdownFileProps) {
                     const markdownText = await response.text();
                     const rawHtml = await marked.parse(markdownText);
                     setHtmlContent(rawHtml);
+                    const heading = markdownText.match(/^#\s+(.+?)\s*$/m);
+                    props.onTitle?.(heading ? heading[1] : null);
                 });
             } catch (err: any) {
                 setError(err.message);

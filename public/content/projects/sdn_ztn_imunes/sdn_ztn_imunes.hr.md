@@ -14,7 +14,7 @@ Ovaj projekt implementira **Zero Trust Network (ZTN)** arhitekturu unutar **IMUN
 
 ## Značajke / Funkcionalnosti
 
--   **Zero Trust politike**: Pristup resursima kontrolira se po korisniku i uređaju — svaki zahtjev za pristupom mora biti eksplicitno autoriziran.
+-   **Zero Trust politike**: Pristup resursima kontrolira se po korisniku i uređaju; svaki zahtjev za pristupom mora biti eksplicitno autoriziran.
 -   **SDN upravljanje prometom**: Open vSwitch čvorovi upravljani su centralnim Ryu kontrolerom koji dinamički instalira flow pravila na temelju aktivnih politika.
 -   **802.1X autentikacija**: Vanjski klijenti pristupaju mreži putem hostapd pristupne točke i RADIUS servera.
 -   **Policy Manager sučelje**: Web sučelje za upravljanje korisnicima, uređajima, resursima i pravilima pristupa u stvarnom vremenu.
@@ -40,7 +40,7 @@ Ovaj projekt je grupni rad izađen na FER-u. Na projektu su sudjelovali Danijel 
 ### Moje odgovornosti
 
 - Dizajn i implementacija Policy API-ja i Policy Managera
-- Ryu kontroler — pronalazak puteva i instalacija flow pravila na inicijalne zahtjeve
+- Ryu kontroler: pronalazak puteva i instalacija flow pravila na inicijalne zahtjeve
 - DHCP
 - Komunikacija hostapd <-> policy-api
 - Komunikacija dhcp <-> policy-api
@@ -134,11 +134,11 @@ Web sučelju dostupnom na portu **5173** možete pristupiti s host sustava ako j
 ![Prikaz web sučelja Policy API-a](/content/projects/sdn_ztn_imunes/policies.png)
 
 Tipičan workflow za dodavanje novog pristupa:
-1. **Users** — dodati korisnika
-2. **Devices** — dodati uređaj i dodijeliti korisnika
-3. **Resources** — dodati resurs
-4. **Devices** → "Assign to Resource" — dodijeliti resurs uređaju
-5. **Policies** — kreirati politiku između korisnika i resursa
+1. **Users**: dodati korisnika
+2. **Devices**: dodati uređaj i dodijeliti korisnika
+3. **Resources**: dodati resurs
+4. **Devices** → "Assign to Resource": dodijeliti resurs uređaju
+5. **Policies**: kreirati politiku između korisnika i resursa
 
 ---
 

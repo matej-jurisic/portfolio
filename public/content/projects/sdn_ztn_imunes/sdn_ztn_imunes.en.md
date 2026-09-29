@@ -14,7 +14,7 @@ This project implements a **Zero Trust Network (ZTN)** architecture within the *
 
 ## Features
 
--   **Zero Trust policies**: Resource access is controlled per user and device — every access request must be explicitly authorized.
+-   **Zero Trust policies**: Resource access is controlled per user and device; every access request must be explicitly authorized.
 -   **SDN traffic management**: Open vSwitch nodes are managed by a central Ryu controller that dynamically installs flow rules based on active policies.
 -   **802.1X authentication**: External clients access the network through a hostapd access point and a RADIUS server.
 -   **Policy Manager interface**: Web UI for managing users, devices, resources, and access rules in real time.
@@ -134,11 +134,11 @@ The web UI available on port **5173** can be accessed from the host system if th
 ![Policy API web interface](/content/projects/sdn_ztn_imunes/policies.png)
 
 Typical workflow for granting new access:
-1. **Users** — add a user
-2. **Devices** — add a device and assign the user to it
-3. **Resources** — add a resource
-4. **Devices** → "Assign to Resource" — assign the resource to the device hosting it
-5. **Policies** — create a policy between the user and the resource
+1. **Users**: add a user
+2. **Devices**: add a device and assign the user to it
+3. **Resources**: add a resource
+4. **Devices** → "Assign to Resource": assign the resource to the device hosting it
+5. **Policies**: create a policy between the user and the resource
 
 ---
 
